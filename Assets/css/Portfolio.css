@@ -30,9 +30,9 @@ body {
      
 }
 
-.header h1 .seo {
+/* .header h1 .seo {
     color: #d9dcd6;
-}
+} */
 
 .header nav {
     padding-top: 15px;
@@ -58,6 +58,11 @@ a {
 /* inserted text decoration and thickness to (a) so the changes can reflect in the header */   
 }
 
+#font{
+    font-size: 50px;
+    float:left;
+    margin-left: 50px; 
+}
 a:hover{
     background-color: white;
 /* adding ":" to a tag can add more features to that tag */
@@ -65,7 +70,8 @@ a:hover{
   
 
 p {
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .hero {
@@ -99,35 +105,193 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
+/*---------------------------------------------------- START SIDEBAR CONTENT------------------------------------------------ */
+.sidebar {
+    margin-right: 20px;
+    padding: 25px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fdfeff;
+}
+
+.sidebar-about-me {
+    margin-bottom: 32px;
+    color: #155998;
+    height: 300px;
+}
+
+#line1{
+    /* line doesnt line up with the boxes on the right, will look into adding the id to the individual divs */
+    border-right: 10px solid #155998;
+    height: 280px;
+    top:50%;
+    transform: translateY (1px);
+}
+
+.sidebar-about-me h3 {
+    font-size: 40px;
+    position: relative;
+    /* display: inline; */
+    margin-bottom: 10px;
+    text-align: right;
+}
+.sidebar-about-me h4 {
+    font-size: 40px;
+    position: relative;
+    /* display: inline; */
+    margin-bottom: 10px;
+    text-align: right;
+}
+#verticle-line {
+    content:'' ;
+    width: 10px;
+    height: 30px;
+    display: block;
+    background-color: #333b3e;
+    position: absolute;
+    
+}
+.sidebar-work {
+    margin-top: 75px;
+    color: #155998;
+    height: 300px
+}
+
+.sidebar-contact-me {
+    margin-top: 800px;
+    color: #155998;
+    height: 300px
+}
+.sidebar-resume {
+    margin-top: 32px;
+    color: #155998;
+    height: 300px
+}
 
 
+.sidebar-work h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+}
 
+.sidebar-contact-me h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.sidebar-contact-me h4 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.sidebar-resume h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+
+/*--------------------------------------END SIDEBAR CONTENT--------------------------------------------*/
 .About-Me {
-    margin-bottom: 20px;
-    padding: 50px;
+    margin-bottom: 25px;
+    padding:50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #155998;
 
 }
 
 .Work-Me {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #155998;
+}
+.figure2{
+    
+    height: 500px;
+}
+.box-position{
+    float: left;
 }
 
+#big-box {
+  background-color: red;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 50px; 
+  
+  }
+
+#small-box-set1 {
+    background-color: rgb(60, 0, 255);
+    height: 150px;
+    width: 607.03px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+#small-box-set2 {
+    background-color: rgb(0, 255, 140);
+    margin-top: -150px;
+    margin-right: 50px;
+    padding: 50px;
+    height: 150px;
+    width: 607.03px ;
+    float: right;
+}
+ /*--------------------------contact me floating content start ----------------- */
+ .figure nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.figure nav ul {
+    list-style-type: none;
+}
+
+.figure nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color:rgb(69, 183, 244);
+    text-decoration: underline;
+    text-decoration-thickness: 7px;
+/* inserted text decoration and thickness to (a) so the changes can reflect in the header */   
+}
+
+#font{
+    font-size: 50px;
+    float:left;
+    margin-left: 50px; 
+}
+a:hover{
+    background-color: white;
+/* adding ":" to a tag can add more features to that tag */
+}
+  
+/*---------------------------contact me floating content end ------------------- */
+
 .Contact-Me {
-    margin-bottom: 20px;
+    margin-top: 150px;
+    margin-bottom: 100px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #155998;
 }
 
 .Resume {
@@ -135,26 +299,11 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #155998;
 
 }
 
-.About-Me img {
-    max-height: 200px;
-}
-
-.Work-Me img {
-    max-height: 200px;
-}
-
-.Contact-Me img {
-    max-height: 200px;
-}
-
-.Resume img {
-    max-height: 200px; 
-}
 
 .about-me h2 {
     margin-bottom: 20px;
@@ -186,3 +335,4 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
