@@ -79,7 +79,7 @@ p {
 /*note, img pixels need to be more than selected in height tag , for the img to be able to respond and shrink when changing window size   */
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("Assets/images/BMX.jpg");
+    background-image: url("BMX.jpg");
     background-size: cover ;
     background-repeat: no-repeat ;
     background-position: top;
